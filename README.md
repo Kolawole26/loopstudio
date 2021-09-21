@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Links
 
-Solution URL: [https://github.com/Emad-Essayed/Frontend-Mentor-Loopstudios-landing-page](https://github.com/Emad-Essayed/Frontend-Mentor-Loopstudios-landing-page)
+Solution URL: 
 
 - Live Site URL: [https://emad-essayed.github.io/Frontend-Mentor-Loopstudios-landing-page/](https://emad-essayed.github.io/Frontend-Mentor-Loopstudios-landing-page/)
 
