@@ -1,0 +1,51 @@
+/* MOBILE MENU Start */
+.mobile-menu {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  padding: 4rem 0;
+  background-color: $black;
+  transform: translateX(-100%);
+  @extend %trans-300;
+  z-index: 99999;
+
+  &.opened {
+    transform: none;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo {
+      max-width: 14rem;
+    }
+  }
+
+  .menu-item-list {
+    margin-top: 15rem;
+  }
+
+  .menu-item {
+    margin-bottom: 2.35rem;
+  }
+
+  .menu-link {
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    color: $white;
+  }
+
+  .close-menu {
+    cursor: pointer;
+  }
+}
+
+@media (min-width: 1200px) {
+  .mobile-menu {
+    display: none;
+  }
+}
+
+/* MOBILE MENU End */

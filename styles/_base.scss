@@ -1,0 +1,123 @@
+/* GLOBAL STYLING Start*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+*::selection {
+  background: none;
+}
+
+h1 {
+  color: $black;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+%trans-200 {
+  transition: all 0.2s ease-in-out;
+}
+
+%trans-300 {
+  transition: all 0.3s ease-in-out;
+}
+
+%trans-500 {
+  transition: all 0.5s ease-in-out;
+}
+
+html {
+  font-family: $font-family-Josefin;
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 2.1rem;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 2;
+}
+
+.hover-anim li a {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    bottom: -0.7rem;
+    width: 0;
+    height: 2px;
+    background-color: $white;
+    @extend %trans-300;
+  }
+
+  &:hover::after {
+    left: 0;
+    right: 0;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+    padding: 0 1.5rem;
+  }
+
+  .mockup {
+    max-width: 100%;
+  }
+}
+
+/* GLOBAL STYLING End*/
